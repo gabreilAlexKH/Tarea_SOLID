@@ -15,7 +15,10 @@ public class Restaurant implements Serializable {
     }
 
 
-
+    /**
+     * Requests the Food to order and adds them to the Booking of the entered Room.
+     * @param room
+     */
     void order(Room room)
     {
         int i,q;

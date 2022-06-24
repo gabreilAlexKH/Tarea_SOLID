@@ -7,7 +7,10 @@ public class Reception implements Serializable{
 
     static Scanner sc = new Scanner(System.in);
 
-
+    /**
+     * Requests Client data and assigns the entered room to them
+     * @param room
+     */
     public void CustDetails(Room room)
     {
         
@@ -42,6 +45,10 @@ public class Reception implements Serializable{
             }
     }
     
+    /**
+     * Check in Client to the selected Room on the entered Floor.
+     * @param floor
+     */
     public void bookroom(Floor floor)
     {
         int rn;
@@ -83,6 +90,10 @@ public class Reception implements Serializable{
     }
     
   
+    /**
+     * Prints the bill with the costs of stay and food service of the entered Room .
+     * @param booking
+     */
     public void bill(Booking booking)
     {
         double total=0;
@@ -120,6 +131,10 @@ public class Reception implements Serializable{
     }
 
 
+    /**
+     * Check in Client from the entered Room and prints its bill
+     * @param room
+     */
     public void deallocate(Room room)
     {
         char w;

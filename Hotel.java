@@ -18,6 +18,11 @@ public class Hotel
     }
 
 
+    /**
+     * Returns n index of the Floor Array
+     * @param n
+     * @return
+     */
     public Floor getFloorN(int n) {
         return floors[n];
     }

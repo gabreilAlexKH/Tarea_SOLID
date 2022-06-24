@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class Main {
 
 
+    /**
+     * Inits a Hotel
+     * @return
+     */
     public static Hotel initHotel(){
 
 
@@ -68,6 +72,11 @@ public class Main {
     }
 
 
+    /**
+     * Gets the floor of the Room using its room number
+     * @param roomNum
+     * @return
+     */
     public static int getFloor(int roomNum){
 
         int floorNum = roomNum/100;
@@ -76,6 +85,13 @@ public class Main {
     }
 
 
+
+    /**
+     * Gets index from the Room in the Floor using the room number
+     * @param floor
+     * @param roomNum
+     * @return
+     */
     public static int getRoomIndex(Floor floor, int roomNum){
 
         int index = roomNum - 100*floor.getnFloor() - 1;

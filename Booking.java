@@ -14,8 +14,6 @@ public class Booking implements Serializable{
         food_orders = new ArrayList<Food_order>();
     }
 
-    
-
 
     public void addFood_Order(Food_order roomService){
 
@@ -24,13 +22,9 @@ public class Booking implements Serializable{
     }
 
 
-
-
     public ArrayList<Client> getClients() {
         return clients;
     }
-
-
 
 
     public Room getRoom() {

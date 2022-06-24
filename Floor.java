@@ -11,22 +11,6 @@ public class Floor {
         this.rooms = rooms;
     }
 
-
-    public int getnFloor() {
-        return nFloor;
-    }
-
-
-    public int getTotalRooms() {
-        return TotalRooms;
-    }
-
-
-    public Room getnRoom(int n) {
-
-        return rooms[n];
-    }
-
     public int floorAvailability()
     {
         int availableRooms = TotalRooms;
@@ -41,10 +25,26 @@ public class Floor {
             
         return availableRooms;
     }
-    
 
-    
+    public int getnFloor() {
+        return nFloor;
+    }
 
+
+    public int getTotalRooms() {
+        return TotalRooms;
+    }
+
+
+    /**
+     * Returns n index of the Room Array
+     * @param n
+     * @return
+     */
+    public Room getnRoom(int n) {
+
+        return rooms[n];
+    }
 
     
     
