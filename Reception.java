@@ -16,7 +16,9 @@ public class Reception implements Serializable{
 
             String name, contact, gender;
 
-            System.out.print("\nEnter customer name: ");
+            System.out.println("\nCustumer "+ (j+1) + " ");
+
+            System.out.print("Enter customer name: ");
             name = sc.next();
             System.out.print("Enter contact number: ");
             contact=sc.next();
@@ -100,7 +102,7 @@ public class Reception implements Serializable{
 
             System.out.println("Food Charges:- ");
             System.out.println("===============");
-            System.out.println("OrderID\tItem\tQuantity\tPrice");
+            System.out.println("ID \t Item \t Quantity \t Price");
 
             System.out.println("-------------------------");
 
@@ -108,7 +110,7 @@ public class Reception implements Serializable{
 
                 Food_order order = food_orders.get(i);
                 total+= order.getTotalprice();
-                String format = "%d\t%s\t%d\t%.2f\n";
+                String format = "%d \t %s \t %d \t %.2f\n";
 
                 System.out.printf(format, i+1 , order.getFood().getName() , order.getQuantity() , order.getFood().getPrice() );
             }
@@ -127,6 +129,7 @@ public class Reception implements Serializable{
         if(booking == null){
 
             System.out.println("\nRoom not booked");
+            return;
         }
         ArrayList<Client> clients = booking.getClients();
 

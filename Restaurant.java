@@ -41,7 +41,6 @@ public class Restaurant implements Serializable {
             Food_order roomService = new Food_order(q, food);
 
             Booking booking = room.getBooking();
-            System.out.println("llege");
             booking.addFood_Order(roomService);
             
            
